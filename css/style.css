@@ -243,7 +243,8 @@ header nav ul li:hover::after{
 /* <!-- NEW IN --> */
 #newin{
     margin-top: 6rem;
-    padding: 5% 15%;
+    padding: 5% 0%;
+    margin: 0 20%;
 }
 
 .title__newin{
@@ -264,35 +265,6 @@ header nav ul li:hover::after{
     position: absolute;
     bottom: 0;
 }
-
-@media screen and (max-width: 992px){
-    .title__newin{
-        font-size: 1.8rem;
-    }
-    
-}
-
-@media screen and (max-width: 767px){
-    .title__newin{
-        font-size: 1.5rem;
-    }
-    
-}
-
-
-@media screen and (max-width: 576px){
-    .title__newin{
-        font-size: 1.2rem;
-    }
-    .title__newin::after{
-        content: "";
-        display: block;
-        width: 20%;
-    }
-}
-
-.slick-prev:before{} 
-.slick-next:before{}
 
 .slick-prev:before, 
 .slick-next:before {
@@ -425,6 +397,10 @@ header nav ul li:hover::after{
 
 @media screen and (max-width: 992px){
     
+    .title__newin{
+        font-size: 1.8rem;
+    }
+
     .overlay__content a, .overlay__content p{
         font-size: 1.5rem;
     }
@@ -470,10 +446,27 @@ header nav ul li:hover::after{
     }
 }
 
+@media screen and (max-width: 767px){
+    .title__newin{
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 576px){
+    .title__newin{
+        font-size: 1.2rem;
+    }
+    .title__newin::after{
+        content: "";
+        display: block;
+        width: 20%;
+    }
+}
+
 @media screen and (max-width: 500px){
     .poster::after{
         left: -200px;
-        width: 400%;
     }
 
     .poster:hover::after{
@@ -481,7 +474,6 @@ header nav ul li:hover::after{
         transition: all 1s;
     }
 }
-
 
 @media screen and (max-width: 479px){
     .overlay__content a, .overlay__content p{
@@ -502,9 +494,7 @@ header nav ul li:hover::after{
 
 
 /* <!-- SHOWTIMES --> */
-
 #date ul{
-    padding: 0 15px;
     border-bottom: 1px solid #00000021;
     align-items: center;
 }
@@ -533,60 +523,55 @@ header nav ul li:hover::after{
     bottom: 0;
 }
 
-#date .item1{
+#date .tab-pane-item {
     padding: 20px 0;
+    border-top: 1px solid #00000021;
 }
 
-
-#date .item{
-    padding: 20px 0;
-    border-top: 1px solid #00000021; 
-}
-
-#date .item .row img, #date .item1 .row img{
+#date .tab-pane-item .row img{
     border-radius: 10px;
     max-width: 100%;
 }
 
-#date .item .row h3, #date .item1 .row h3{
+#date .tab-pane-item .row h3{
     font-size: 1.5rem;
     color: #ec7532;
 }
 
-#date .item .row h1, #date .item1 .row h1{
+#date .tab-pane-item .row h1{
     font-size: 2.5rem;
 }
 
-#date .item .row p, #date .item1 .row p{
+#date .tab-pane-item .row p{
     font-size: 1.5rem;
     color: #b8b8b8;
 }
 
-#date .item .row a, #date .item1 .row a{
+#date .tab-pane-item .row a{
     padding: 20px 0;
     color: #ec7532;
     font-size: 1.5rem;
     letter-spacing: 2px;
 }
 
-#date .item .row span, #date .item1 .row span{
-    font-size: 1.2rem;
+#date .tab-pane-item .row span{
+    font-size: 1.5rem;
     padding-right: 5px;
 }
 
-#date .item .row .time, #date .item1 .row .time{
+#date .tab-pane-item .row .time{
     padding: 10px 20px;
     margin-right: 10px;
     background: rgba(128, 128, 128, 0.24);
     border-radius: 5px;
 }
 
-#date .item .row .full, #date .item1 .row .full{
+#date .tab-pane-item .row .full{
     background: #ececec;
     color: #b8b8b8;
 }
 
-#date .item .row .limit, #date .item1 .row .limit{
+#date .tab-pane-item .row .limit{
     text-align: center;
     padding: 10px;
     line-height: 40px;
@@ -605,9 +590,17 @@ header nav ul li:hover::after{
 }
 
 @media screen and (max-width: 992px){
-    .row .clean-row{
-            clear: both;
+    #date .tab-pane-item .row span{
+        font-size: 1.2rem;
+        margin-right: 0;
+        padding-right: 0px;
     }
+    
+    #date .tab-pane-item .row .time{
+        padding: 5px 10px;
+        margin-right: 0px;
+    }
+
 }
 
 @media screen and (max-width: 650px){
@@ -615,6 +608,7 @@ header nav ul li:hover::after{
         margin-right: 0 !important;
         padding: 5px !important;
     }
+    
 }
 
 @media screen and (max-width: 600px){
@@ -639,8 +633,24 @@ header nav ul li:hover::after{
         background: linear-gradient(to bottom, #fbbd61, #ec7532);
     }
 
-    
+    .row .clean-row{
+        clear: both;
+        margin-top: 10px;    
+    }
+
 }
+
+@media screen and (max-width: 300px){
+    #date .tab-pane-item .row span{
+        font-size: 0.8rem;
+    }
+    
+    #date .tab-pane-item .row .time{
+        padding: 2px 5px;
+    }
+}
+
+
 
 /* <!-- END SHOWTIMES --> */
 
@@ -648,15 +658,34 @@ header nav ul li:hover::after{
 /* <!-- COMING-MOVIES --> */
 #coming{
     padding-top: 80px;
+    position: relative;
 }
 
-.coming_slide .coming_slide_item{
-    background-color: darkgrey;
-    height: 80rem;
+.container {
+    max-width: 100%;
+    padding: 0 2%
 }
 
+.coming_slide .coming_slide_item1{
+    background: url(../img/slide-3.png) no-repeat center black;
+    background-size: cover;
+    height: 100rem;    
+}
 
-.coming_slide .container > h1{
+.coming_slide .coming_slide_item2{
+    background: url(../img/slide-5.png) no-repeat center black;
+    background-size: cover;
+    height: 100rem;
+}
+
+.coming_slide .coming_slide_item3{
+    background: url(../img/slide-7.png) no-repeat center black;
+    background-size: cover;
+    height: 100rem;
+}
+
+.coming_slide .title{
+    display: block;
     text-transform: uppercase;
     font-size: 2rem;
     color: white;
@@ -666,7 +695,7 @@ header nav ul li:hover::after{
     position: relative;
 }
 
-.coming_slide .container > h1::after{
+.coming_slide .title::after{
     content: '';
     position: absolute;
     height: 3px;
@@ -682,7 +711,7 @@ header nav ul li:hover::after{
 
 .coming_slide .row .left-part{
     color: white;
-    padding:  40px 20px;
+    padding: 40px 20px;
 }
 
 .row .left-part h3{
@@ -690,7 +719,7 @@ header nav ul li:hover::after{
 }
 
 .row .left-part h1{
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 
 .row .left-part .time-vote{
@@ -719,33 +748,35 @@ header nav ul li:hover::after{
 
 }
 
-.row .right-part .trailer > img{
-    width: 100%;
+.row .right-part{
+    padding: 10px;
 }
 
 .row .right-part .trailer{
     position: relative;
 }
 
+.row .right-part img{
+    max-width: 100%;
+    height: auto;
+}
+
 .row .right-part .trailer a{
     position: absolute;
-    left: 45%;
+    left: 40%;
     bottom: 40%;
-    padding: 30px;
+    padding: 25px;
     border-radius: 50%;
-    border: 1px solid #ec7532;
+    border: 2px solid #ec7532;
     color: #ececec;
 }
 
 .coming_slide_nav img{
-    max-width: 80%;
+    max-width: 90%;
     border-radius: 10px;
+    margin: 0;
+    padding: 0;
 } 
-
-
-#coming{
-    position: relative;
-}
 
 #coming .coming_slide_nav{
     position: absolute;
@@ -754,6 +785,141 @@ header nav ul li:hover::after{
     bottom: 0;
     z-index: 1;
     background-color: black;
+}
+
+@media screen and (max-width: 1120px){  
+    
+    .coming_slide .row .left-part{
+        padding: 20px 15px;
+    }
+
+    .row .left-part h3{
+        font-size: 1.5rem;
+    }
+
+    .row .left-part h1{
+        font-size: 2.2rem;
+    }
+
+    .row .left-part .time-vote i{
+        padding-right: 2px;
+    }
+    
+    .row .left-part .time-vote span{
+        font-size: 1.2rem;
+    }
+    
+    .row .left-part p{
+        font-size: 1.2rem;
+        padding-right: 35px;
+    }
+    
+    .row .left-part a{
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        color: #ec7532;
+    
+    }
+
+    .row .right-part .trailer > img{
+        max-width: 100%;
+        height: auto;
+        margin-top: 15px;
+    }
+    
+
+    .row .right-part .trailer a{
+        position: absolute;
+        left: 40%;
+        bottom: 40%;
+        padding: 15px;
+        border-radius: 50%;
+        border: 2px solid #ec7532;
+        color: #ececec;
+    }
+
+}
+
+@media screen and (max-width: 786px){  
+    .coming_slide .row .left-part{
+        padding: 0 15px;
+    }
+
+    .row .left-part h3{
+        font-size: 1.2rem;
+    }
+
+    .row .left-part h1{
+        font-size: 1.8rem;
+    }
+
+    .row .left-part .time-vote i{
+        padding-right: 0;
+    }
+    
+    .row .left-part .time-vote span{
+        font-size: 1.2rem;
+    }
+    
+    .row .left-part p{
+        font-size: 1.2rem;
+        padding-right: 0px;
+    }
+    
+    .row .left-part a{
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        color: #ec7532;
+    
+    }
+
+    .row .right-part .trailer > img{
+        max-width: 100%;
+        height: auto;
+        margin-top: 15px;
+    }
+    
+
+    .row .right-part .trailer a{
+        position: absolute;
+        left: 40%;
+        bottom: 40%;
+        padding: 10px;
+        border-radius: 50%;
+        border: 2px solid #ec7532;
+        color: #ececec;
+    }
+
+}
+
+@media screen and (max-width: 600px){  
+    .coming_slide .row .left-part{
+        padding: 15px;
+    }
+
+    .coming_slide .row .clear{
+        clear: both;
+    }
+
+    .row .right-part .trailer > img{
+        max-width: 100%;
+        height: auto;
+        margin-top: 15px;
+    }
+    
+
+    .row .right-part .trailer a{
+        position: absolute;
+        left: 40%;
+        bottom: 40%;
+        padding: 10px;
+        border-radius: 50%;
+        border: 2px solid #ec7532;
+        color: #ececec;
+    }
+
 }
 
 

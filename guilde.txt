@@ -67,3 +67,76 @@ col-xl-x: kích thước màn hình >= 1200px
           <a href="https://www.youtube.com/embed/RhFMIRuHAL4" class="btn btn-default venobox" data-vbtype="video"><i
               class="fas fa-play pr-4"></i><span>PLAY TRAILER</span></a>
         </div>
+
+pic 2
+<img src="./img/movie-5.jpg" alt="">
+
+<h3>ACTION, ADVENTURE, SCI-FI</h3>
+<h1>Captain America: The First Avenger</h1>
+<p>Steve Rogers, a rejected military soldier transforms into Captain America after taking a dose of a
+"Super-Soldier serum". But being Captain America comes at a price as he attempts to take down a war
+monger and a terrorist organization.</p>
+
+<i class="far fa-clock"></i>
+<span>VIEWING TIMES</span>
+<span class="time full">11:00</span>
+<span class="time">16:00</span>
+<span class="time">18:00</span>
+<span class="time">21:00</span>
+
+<span>120 MINS</span>
+<span class="limit">PG</span>
+
+pic 3
+<img src="./img/movie-8.jpg" alt="">
+
+<h3>DRAMA</h3>
+<h1>Fences</h1>
+<p>A working-class African-American father tries to raise his family in the 1950s, while coming to terms
+with the events of his life.</p>
+
+<i class="far fa-clock"></i>
+<span>VIEWING TIMES</span>
+<span class="time full">10:00</span>
+<span class="time full">12:45</span>
+<span class="time">17:00</span>
+<span class="time">21:15</span>
+
+<span>135 MINS</span>
+<span class="limit">18</span>
+
+pic 4
+<img src="./img/movie-7.jpg" alt="">
+
+<h3>DRAMA</h3>
+<h1>Daylight</h1>
+<p>A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+rough neighborhood of Miami.</p>
+
+<i class="far fa-clock"></i>
+<span>VIEWING TIMES</span>
+<span class="time full">11:00</span>
+<span class="time full">14:30</span>
+<span class="time">20:00</span>
+<span class="time">21:15</span>
+
+<span>117 MINS</span>
+<span class="limit">U</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
