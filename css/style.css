@@ -20,7 +20,7 @@ header{
     font-weight: 600;
     padding: 0 5px;
     text-decoration: none;
-    color: white;
+    color:  white;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -141,7 +141,7 @@ header nav ul li:hover::after{
 }
 
 
-.carousel-content .title{
+.carousel-item .title{
     color: #fbbd61;
     font-size: 1.5rem;
 }
@@ -154,15 +154,15 @@ header nav ul li:hover::after{
 .carousel-inner p{
     font-size: 1.8rem;
     margin-top: 10px;
-    padding-right: 200px;
+    padding-right: 100  px;
     font-weight: 600;
     margin-bottom: 30px;
 }
 
 .carousel-inner .limit{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    padding: 15px;
+    padding: 12px;
     border: 2px solid white;
     border-radius: 50%;
     letter-spacing: 2px;
@@ -172,7 +172,7 @@ header nav ul li:hover::after{
     color: white !important;
     background: linear-gradient(to right,#fbbd61,#ec7532) no-repeat;
     background-size: cover;
-    padding: 20px 60px;
+    padding: 15px 40px;
     border-radius: 35px;
     position: relative;
     overflow: hidden;
@@ -203,15 +203,7 @@ header nav ul li:hover::after{
     }
     
     .carousel-inner p{
-        font-size: 1.2rem;
-    }
-    
-    .carousel-inner .limit{
-        font-size: 1rem;
-    }
-    
-    .btn-default{
-        padding: 15px 40px;
+        font-size: 1.8rem;
     }
     
     a.btn-default span{
@@ -228,78 +220,12 @@ header nav ul li:hover::after{
         font-size: 3.5rem;
     }
     
-    .carousel-inner p{
-        font-size: 1rem;
-    }
-    
-    .carousel-inner .limit{
-        font-size: 0.8rem;
-        padding: 12px;
-    }
-    
-    .btn-default{
-        padding: 10px 30px;
-    }
-
     a.btn-default span{
         font-size: 1rem;
     }
 }
 
-@media screen and (max-width: 500px) {
-    .carousel-content .title{
-        font-size: 0.9rem;
-    }
-    
-    .carousel-inner h1{
-        font-size: 3rem;
-    }
-    
-    .carousel-inner p{
-        font-size: 0.9rem;
-        padding-right: 80px;
-    }
-    
-    .carousel-inner .limit{
-        font-size: 0.9rem;
-        padding: 10px;
-    }
-    
-    .btn-default{
-        padding: 8px 25px;
-        font-size: 1rem;
-    }
 
-    a.btn-default span{
-        font-size: 0.8rem;
-    }
-}
-
-@media screen and (max-width: 339px) {
-    .carousel-content .title{
-        font-size: 0.9rem;
-    }
-    
-    .carousel-inner h1{
-        font-size: 2rem;
-    }
-    
-    .carousel-inner p{
-        font-size: 0.7rem;
-        padding-right: 50px;
-    }
-    
-    .carousel-inner .limit{
-        font-size: 0.9rem;
-        padding: 7px;
-    }
-    
-    .btn-default{
-        padding: 8px 10px;
-        
-    }
-
-}
 
 
 .btn-default i,.btn-default span{
@@ -317,38 +243,52 @@ header nav ul li:hover::after{
 /* <!-- NEW IN --> */
 #newin{
     margin-top: 6rem;
-    padding: 80px 0;
+    padding: 5% 15%;
 }
 
 .title__newin{
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 3rem;
     color: #ec7532;
     padding-bottom: 20px;
     border-bottom: 1px solid #00000021;
     position: relative;
 }
 
-@media screen and (max-width: 992px){
-    .title__newin{
-        font-size: 2rem;
-    }
-}
-
-@media screen and (max-width: 576px){
-    .title__newin{
-        font-size: 1.5rem;
-    }
-}
-
 .title__newin::after{
     content: "";
     display: block;
-    width: 10%;
+    width: 15%;
     height: 3px;
     background: linear-gradient(to right,#fbbd61,#ec7532);
     position: absolute;
     bottom: 0;
+}
+
+@media screen and (max-width: 992px){
+    .title__newin{
+        font-size: 1.8rem;
+    }
+    
+}
+
+@media screen and (max-width: 767px){
+    .title__newin{
+        font-size: 1.5rem;
+    }
+    
+}
+
+
+@media screen and (max-width: 576px){
+    .title__newin{
+        font-size: 1.2rem;
+    }
+    .title__newin::after{
+        content: "";
+        display: block;
+        width: 20%;
+    }
 }
 
 .slick-prev:before{} 
@@ -372,46 +312,56 @@ header nav ul li:hover::after{
 }
 
 .poster img{
-    max-width: 100%;
+    width: 100%;
 }
 
 .poster .overlay__content{
     position: absolute;
-    left: 25%;
-    bottom: 20%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     color: white;
     z-index: 1;
-    opacity: 1;
+    opacity: 0;
+    margin: 0 auto;
+    padding-top: 35%;
+    transition: all 0.5s;
 }
 
 .overlay__content i{
     color: white;
     font-size: 2.5rem;
     text-align: center;
-    padding: 20px;
+    padding-right: 20px;
+    padding-left: 30px;
+    padding-top:    25px;
+    padding-bottom: 25px;
     border: 1px solid white;
     border-radius:  50%;
-    margin-bottom: 40px;
-    margin-right: 20px;
+    margin-bottom: 5%;
+
 }
 
 .overlay__content a{
-    font-size: 1.5rem;
+    display: block;
+    font-size: 1.8rem;
     color: white;
     text-decoration: none;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     text-transform: uppercase;
+    margin-top: 0px;
 }
 
 .overlay__content p{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .poster::after{
     position: absolute;
     z-index: 1;
     bottom: 0;
-    left: -100px;
+    left: -115px;
     width: 0;
     height: 100%;
     content: '';
@@ -427,49 +377,124 @@ header nav ul li:hover::after{
     transition: all 1s;
 }
 
-/* .poster:hover .overlay__content{
+.poster:hover .overlay__content{
     opacity: 1;
     transition: all 1s;
-} */
+}
+
+.poster:hover .overlay__content i:hover{
+    font-size: 2.5rem;
+    padding-right: 18px;
+    padding-left: 28px;
+    padding-top:    23px;
+    padding-bottom: 23px;   
+    transition: all 0.5s;
+}
+
+
+@media screen and (max-width: 1200px){
+    
+    .overlay__content a, .overlay__content p{
+        font-size: 1.5rem;
+    }
+    
+    .poster::after{
+        left: -80px;
+    }
+    .overlay__content i{
+        font-size: 2rem;
+        padding-right: 15px;
+        padding-left: 25px;
+        padding-top:    20px;
+        padding-bottom: 20px;     
+    }
+
+    .poster:hover .overlay__content i:hover{
+        font-size: 2rem;
+        padding-right: 13px;
+        padding-left: 23px;
+        padding-top:    18px;
+        padding-bottom: 18px;   
+        transition: all 0.5s;
+    }
+
+    .newin__content .row h1{
+        font-size: 2rem;
+    }
+}
 
 @media screen and (max-width: 992px){
     
-    
-    .poster .overlay__content{
-        left: 20%;
-        bottom: 20%;
+    .overlay__content a, .overlay__content p{
+        font-size: 1.5rem;
+    }
+    .overlay__content i{
+        font-size: 1.5rem;
+        padding-right: 12px;
+        padding-left: 22px;
+        padding-top:    17px;
+        padding-bottom: 17px;     
     }
 
-    .overlay__content i{
-        padding: 15px;
+    .poster:hover .overlay__content i:hover{
+        font-size: 1.5rem;
+        padding-right: 8px;
+        padding-left: 18px;
+        padding-top:    13px;
+        padding-bottom: 13px;   
+        transition: all 0.5s;
     }
-    .overlay__content a{
+
+}
+
+@media screen and (max-width: 776px){
+    
+    .overlay__content a, .overlay__content p{
         font-size: 1.2rem;
     }
-    .overlay__content p{
-        font-size: 1.5rem;
+    .overlay__content i{
+        font-size: 1.2rem;
+        padding-right: 12px;
+        padding-left: 22px;
+        padding-top:    17px;
+        padding-bottom: 17px;     
+    }
+
+    .poster:hover .overlay__content i:hover{
+        font-size: 1.2rem;
+        padding-right: 3px;
+        padding-left: 13px;
+        padding-top:    8px;
+        padding-bottom: 8px;   
+        transition: all 0.5s;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .poster::after{
+        left: -200px;
+        width: 400%;
+    }
+
+    .poster:hover::after{
+        width: 400%;
+        transition: all 1s;
     }
 }
 
 
-@media screen and (max-width: 829px){
-    .poster img{
-        max-width: 80%;
-    }
-    
-    .poster .overlay__content{
-        left: 20%;
-        bottom: 20%;
+@media screen and (max-width: 479px){
+    .overlay__content a, .overlay__content p{
+        font-size: 1.8rem;
     }
 
     .overlay__content i{
-        padding: 15px;
-    }
-    .overlay__content a{
-        font-size: 1.2rem;
-    }
-    .overlay__content p{
-        font-size: 1.5rem;
+        font-size: 2.5rem;
+        padding-right: 15px;
+        padding-left: 25px;
+        padding-top:    20px;
+        padding-bottom: 20px;  
+        margin-bottom: 5%;   
     }
 }
 
@@ -480,6 +505,8 @@ header nav ul li:hover::after{
 
 #date ul{
     padding: 0 15px;
+    border-bottom: 1px solid #00000021;
+    align-items: center;
 }
 
 .nav-pills .nav-item .nav-link{
@@ -490,97 +517,129 @@ header nav ul li:hover::after{
     padding: 0 30px;
 }
 
-#date ul li {
-    position: relative;
-    padding-bottom: 15px
-}
-
-#date ul li.active::after{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(to right,#fbbd61,#ec7532);
-    position: absolute;
-    bottom: 0;
-}
-
-#date ul li.active a{
+.nav-item .nav-link.active{
     color: #ec7532;
+    position: relative;
+    padding-bottom: 10px;
 }
 
-#date ul li::after{
-    content: "";
-    display: block;
-    width: 0%;
-    height: 3px;
-    background: linear-gradient(to right,#fbbd61,#ec7532);
+.nav-item a.nav-link.active::after{
+    content: '';
+    background: linear-gradient(to right, #fbbd61, #ec7532);
     position: absolute;
+    height: 3px;
+    width: 100%;
+    left: 0;
     bottom: 0;
 }
 
-#date ul li:hover::after{
-    content: "";
-    width: 100%;
-    transition: all 0.5s;
+#date .item1{
+    padding: 20px 0;
 }
+
 
 #date .item{
     padding: 20px 0;
     border-top: 1px solid #00000021; 
 }
 
-#date .item .row img{
+#date .item .row img, #date .item1 .row img{
     border-radius: 10px;
-    height: 200px;
-    width: 170px;
+    max-width: 100%;
 }
 
-#date .item .row h3{
+#date .item .row h3, #date .item1 .row h3{
     font-size: 1.5rem;
     color: #ec7532;
 }
 
-#date .item .row h1{
+#date .item .row h1, #date .item1 .row h1{
     font-size: 2.5rem;
 }
 
-#date .item .row p{
-    font-size: 1.2rem;
+#date .item .row p, #date .item1 .row p{
+    font-size: 1.5rem;
     color: #b8b8b8;
 }
 
-#date .item .row a{
+#date .item .row a, #date .item1 .row a{
     padding: 20px 0;
     color: #ec7532;
     font-size: 1.5rem;
     letter-spacing: 2px;
 }
 
-#date .item .row span{
+#date .item .row span, #date .item1 .row span{
     font-size: 1.2rem;
     padding-right: 5px;
 }
 
-#date .item .row .time{
+#date .item .row .time, #date .item1 .row .time{
     padding: 10px 20px;
     margin-right: 10px;
     background: rgba(128, 128, 128, 0.24);
     border-radius: 5px;
 }
 
-#date .item .row .full{
+#date .item .row .full, #date .item1 .row .full{
     background: #ececec;
     color: #b8b8b8;
 }
 
-#date .item .row .limit{
+#date .item .row .limit, #date .item1 .row .limit{
     text-align: center;
     padding: 10px;
     line-height: 40px;
     border-radius: 50%;
     background-color: rgb(48, 46, 46);
     color: white;
+}
+
+
+@media screen and (max-width: 1100px){
+    .nav-pills .nav-item .nav-link{
+        font-size: 2rem;
+        padding: 0 20px;
+    }
+    
+}
+
+@media screen and (max-width: 992px){
+    .row .clean-row{
+            clear: both;
+    }
+}
+
+@media screen and (max-width: 650px){
+    #date .row span.time{
+        margin-right: 0 !important;
+        padding: 5px !important;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .nav-pills .nav-item .nav-link{
+        font-size: 1.8rem;
+        padding: 0 15px;
+    }
+    #date ul{
+        
+        border-bottom: none;
+        
+    }
+    #date ul li{
+        display: inline;
+        width: 100%;
+    }
+
+    .nav-item a.nav-link.active::after{
+        content: '';
+        width: 3px;
+        height: 100%;
+        background: linear-gradient(to bottom, #fbbd61, #ec7532);
+    }
+
+    
 }
 
 /* <!-- END SHOWTIMES --> */
@@ -597,8 +656,6 @@ header nav ul li:hover::after{
 }
 
 
-
- 
 .coming_slide .container > h1{
     text-transform: uppercase;
     font-size: 2rem;
@@ -698,7 +755,6 @@ header nav ul li:hover::after{
     z-index: 1;
     background-color: black;
 }
-
 
 
 /* <!-- END COMING-MOVIES --> */
