@@ -12,7 +12,7 @@ header{
     z-index: 2021;
     left: 50%;
     transform: translateX(-50%);  
-    padding: 40px 0;  
+    padding: 40px 0; 
 }
 
 .heading a{
@@ -490,6 +490,11 @@ header nav ul li:hover::after{
     }
 }
 
+@media screen and (max-width: 479px){
+    .overlay__content a, .overlay__content p{
+        font-size: 1.4rem;
+    }
+}
 /* <!-- END NEW IN --> */
 
 
@@ -657,11 +662,11 @@ header nav ul li:hover::after{
 
 /* <!-- COMING-MOVIES --> */
 #coming{
-    padding-top: 80px;
     position: relative;
+    margin-top: 10%;
 }
 
-.container {
+#coming .coming_slide .container {
     max-width: 100%;
     padding: 0 2%
 }
@@ -757,7 +762,7 @@ header nav ul li:hover::after{
 }
 
 .row .right-part img{
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
 }
 
@@ -771,8 +776,13 @@ header nav ul li:hover::after{
     color: #ececec;
 }
 
+.row .right-part .trailer a:hover{
+    padding: 20px;
+    transition: all 0.5s;
+}
+
 .coming_slide_nav img{
-    max-width: 90%;
+    max-width: 100%;
     border-radius: 10px;
     margin: 0;
     padding: 0;
@@ -788,7 +798,8 @@ header nav ul li:hover::after{
 }
 
 @media screen and (max-width: 1120px){  
-    
+
+
     .coming_slide .row .left-part{
         padding: 20px 15px;
     }
@@ -839,6 +850,16 @@ header nav ul li:hover::after{
         color: #ececec;
     }
 
+    .row .right-part .trailer a:hover{
+        padding: 12px;
+    }
+
+}
+
+@media screen and (max-width: 990px){
+    #coming .coming_slide .container{
+        padding-top: 5%;
+    }
 }
 
 @media screen and (max-width: 786px){  
@@ -892,6 +913,10 @@ header nav ul li:hover::after{
         color: #ececec;
     }
 
+    .row .right-part .trailer a:hover{
+        padding: 7px;
+    }
+
 }
 
 @media screen and (max-width: 600px){  
@@ -910,18 +935,19 @@ header nav ul li:hover::after{
     }
     
 
-    .row .right-part .trailer a{
-        position: absolute;
-        left: 40%;
-        bottom: 40%;
-        padding: 10px;
-        border-radius: 50%;
-        border: 2px solid #ec7532;
-        color: #ececec;
-    }
-
 }
 
+@media screen and (max-width: 574px){
+    #coming .coming_slide .container{
+        padding-top: 0%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #coming .coming_slide .container{
+        padding-top: 5%;
+    }
+}
 
 /* <!-- END COMING-MOVIES --> */
 
@@ -940,6 +966,58 @@ header nav ul li:hover::after{
 .contact__content h1{
     font-size: 4rem;
     color: #ec7532;
+}
+
+@media screen and (max-width: 1250px){
+    .contact__content p{
+        font-size: 2rem;
+    }
+    
+    .contact__content h1{
+        font-size: 3.8rem;
+        color: #ec7532;
+    }
+}
+
+@media screen and (max-width: 992px){
+
+    .contact__content p{
+        font-size: 1.5rem;
+    }
+    
+    .contact__content h1{
+        font-size: 3.2rem;
+        color: #ec7532;
+    }
+}
+
+
+@media screen and (max-width: 776px){
+
+    .contact__content p{
+        font-size: 1rem;
+    }
+    
+    .contact__content h1{
+        font-size: 2.8rem;
+        color: #ec7532;
+    }
+}
+
+@media screen and (max-width: 570px){
+    #contact{
+        padding: 5% 10%;
+        text-align: center
+    }    
+
+    .contact__content p{
+        font-size: 1rem;
+    }
+    
+    .contact__content h1{
+        font-size: 2.5rem;
+        color: #ec7532;
+    }
 }
 /* <!-- END CONTACT --> */
 
@@ -995,6 +1073,19 @@ footer .row a span{
 footer .row a:hover, footer .row a:hover i{
     color: #fbbd61;
     transition: all 1s;
+}
+
+@media screen and (max-width: 767px){
+    footer .clear{
+        clear: both;
+    }
+}
+
+@media screen and (max-width: 992px){
+    footer .row p{
+        color: #ec7532;
+        font-size:1.5rem;
+    }
 }
 
 

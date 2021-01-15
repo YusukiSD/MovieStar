@@ -21,6 +21,11 @@
   <link rel="stylesheet" href="./slick/slick.css">
   <link rel="stylesheet" href="./slick/slick-theme.css">
 
+  <!-- headhesive -->
+  <!-- <link rel="stylesheet" href="./css/headhesive.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/normalize.css"> -->
+
   <!-- CSS -->
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -136,6 +141,8 @@
         </a> -->
   </div>
 
+
+  <!-- <a id="showHere"></a> -->
   <!-- NEW IN -->
   <section id="newin">
     <h1 class="title__newin">new in</h1>
@@ -1213,7 +1220,7 @@
             </div>
             <p>When one of their own is kidnapped by an angry gangster, the Wolf Pack must track down Mr. Chow, who
               has escaped from prison and is on the run.</p>
-            <a href="#">more info ></a>
+            <a href="#newin">more info ></a>
           </div>
           <div class="col-sm-6  right-part clear">
             <div class="trailer">
@@ -1224,7 +1231,6 @@
           </div>
         </div>
       </div>
-
 
       <div class="coming_slide_item2 container">
         <h1 class="title">coming soon</h1>
@@ -1243,7 +1249,7 @@
             </div>
             <p>A growing nation of genetically evolved apes led by Caesar is threatened by a band of human survivors
               of the devastating virus unleashed a decade earlier.</p>
-            <a href="#">more info ></a>
+            <a href="#newin">more info ></a>
           </div>
           <div class="col-sm-6  right-part clear">
             <div class="trailer">
@@ -1254,7 +1260,6 @@
           </div>
         </div>
       </div>
-
 
       <div class="coming_slide_item3 container">
         <h1 class="title">coming soon</h1>
@@ -1273,7 +1278,7 @@
             </div>
             <p>An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to
               find a way to signal to Earth that he is alive.</p>
-            <a href="#">more info ></a>
+            <a href="#newin">more info ></a>
           </div>
           <div class="col-sm-6  right-part clear">
             <div class="trailer">
@@ -1284,8 +1289,6 @@
           </div>
         </div>
       </div>
-
-
 
       <div class="coming_slide_item1 container">
         <h1 class="title">coming soon</h1>
@@ -1304,7 +1307,7 @@
             </div>
             <p>When one of their own is kidnapped by an angry gangster, the Wolf Pack must track down Mr. Chow, who
               has escaped from prison and is on the run.</p>
-            <a href="#">more info ></a>
+            <a href="#newin">more info ></a>
           </div>
           <div class="col-sm-6  right-part clear">
             <div class="trailer">
@@ -1315,7 +1318,6 @@
           </div>
         </div>
       </div>
-
 
       <div class="coming_slide_item2 container">
         <h1 class="title">coming soon</h1>
@@ -1334,7 +1336,7 @@
             </div>
             <p>A growing nation of genetically evolved apes led by Caesar is threatened by a band of human survivors
               of the devastating virus unleashed a decade earlier.</p>
-            <a href="#">more info ></a>
+            <a href="#newin">more info ></a>
           </div>
           <div class="col-sm-6  right-part clear">
             <div class="trailer">
@@ -1345,7 +1347,6 @@
           </div>
         </div>
       </div>
-
 
       <div class="coming_slide_item3 container">
         <h1 class="title">coming soon</h1>
@@ -1364,7 +1365,7 @@
             </div>
             <p>An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to
               find a way to signal to Earth that he is alive.</p>
-            <a href="#">more info ></a>
+            <a href="#newin">more info ></a>
           </div>
           <div class="col-sm-6  right-part clear">
             <div class="trailer">
@@ -1393,7 +1394,7 @@
             </div>
             <p>A growing nation of genetically evolved apes led by Caesar is threatened by a band of human survivors
               of the devastating virus unleashed a decade earlier.</p>
-            <a href="#">more info ></a>
+            <a href="#newin">more info ></a>
           </div>
           <div class="col-sm-6  right-part clear">
             <div class="trailer">
@@ -1440,6 +1441,7 @@
         </div>
       </div>
     </div>
+    </div>
   </section>
 
 
@@ -1455,26 +1457,26 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col-md-3 clear">
           <p>GET IN TOUCH</p>
           <a href="">FAQs</a><br>
           <a href="">Give us feedback</a><br>
           <a href="">Contact us</a><br>
         </div>
-        <div class="col">
+        <div class="col-md-3 clear">
           <p>ABOUT MOVIE STAR</p>
           <a href="">About us</a><br>
           <a href="">Find us</a><br>
           <a href="">Schedule</a><br>
           <a href="">News</a><br>
         </div>
-        <div class="col">
+        <div class="col-md-3 clear">
           <p>LEGAL STUFF</p>
           <a href="">Terms & Conditions</a><br>
           <a href="">Privacy policy</a><br>
           <a href="">Cookie policy</a><br>
         </div>
-        <div class="col">
+        <div class="col-md-3 clear">
           <p>CONNECT WITH US</p>
           <a href=""><i class="fab fa-facebook-f"></i><span>Facebook</span></a><br>
           <a href=""><i class="fab fa-twitter"></i><span>Twitter</span></a><br>
@@ -1556,17 +1558,63 @@
     });
 
     $('.slide_nav').slick({
-      slidesToShow: 6,
+      slidesToShow: 5,
       slidesToScroll: 1,
       asNavFor: '.coming_slide',
       dots: false,
-      arrows: false,
+      arrows: true,
       centerMode: true,
-      focusOnSelect: true
+      focusOnSelect: true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            dots: false,
+            arrows: false,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
     });
   </script>
+  <!-- <script type="text/javascript" src="js/headhesive.min.js"></script> -->
+  <!-- <script>
 
+    // Set options
+    var options = {
+      offset: '#showHere',
+      offsetSide: 'top',
+      classes: {
+        clone: 'banner--clone',
+        stick: 'banner--stick',
+        unstick: 'banner--unstick'
+      }
+    };
 
+    // Initialise with options
+    var banner = new Headhesive('.banner', options);
+
+    // Headhesive destroy
+    // banner.destroy();
+  </script> -->
 </body>
 
 </html>
