@@ -76,6 +76,17 @@ header nav ul li:hover::after{
     box-shadow: 0 0 10px 0 #fbbd61;
 }
 
+/* fix header */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    transition: all 1s; 
+    padding: 0;
+    padding: 20px 0;
+}
+
 @media screen and (max-width: 992px){
     header nav ul li a{
         font-size: 1rem;
@@ -1090,3 +1101,4 @@ footer .row a:hover, footer .row a:hover i{
 
 
 /* <!-- END FOOTER --> */
+
